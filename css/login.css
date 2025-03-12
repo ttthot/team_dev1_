@@ -1,3 +1,15 @@
+/* 後から追加した */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    'Roboto',
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f7fafe;
