@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>category</title>
+    <title>checklist</title>
     <!-- リセットCSS: ブラウザのデフォルトスタイルをリセット -->
     <link
       rel="stylesheet"
@@ -21,9 +21,9 @@
     <div class="container">
       <!-- ナビゲーションタブ -->
       <div class="tabs">
-        <div class="tab">Category</div>
-        <div class="tab active">Checklist</div>
-        <div class="tab">Item</div>
+        <a href="category.php" class="tab">Category</a>
+        <a href="checklist.php" class="tab">Checklist</a>
+        <a href="item.php" class="tab active">Item</a>      
       </div>
 
       <!-- メインコンテンツ 　php用に修正予定-->
@@ -53,15 +53,24 @@
           </li>
         </ul>
 
-        <!-- 仮　　　ボタンを押したらadd_checklist.phpが実行される -->
-        <button
-          class="add-button"
-          onclick="window.location.href='add_checklist.php'"
-        >
-          <span class="plus-icon">+</span>
-          Add Checklist
-        </button>
+        <div class="button-container">
+          <button
+            class="oval-button add-button"
+            onclick="window.location.href='add_checklist.php'"
+          >
+            <span class="plus-icon">+</span>
+            Add Checklist
+          </button>
+
+          <!-- <button
+            type="button"
+            class="return-button"
+            onclick="window.location.href='target.php';"
+          >
+            ← Return
+          </button> -->
+        </div>
       </div>
-    </div>
+    </div
   </body>
 </html>
